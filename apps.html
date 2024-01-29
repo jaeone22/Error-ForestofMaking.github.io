@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>goUP | 모든 앱</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+  <link rel="icon" href="favicon/favicon.ico">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">goUP</a></li>
+        <select_items><li><a href="apps.html">모든 앱</a></li></select_items>
+        <li><a href="download.html">다운로드</a></li>
+        <li><a href="help.html">지원</a></li>
+        <li><a href="goup_id.html">계정</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="title_con">
+    <div class="title_box">
+      <span class="normal-text">모든 </span>
+      <span class="bold-text">goUP</span>
+      <span class="normal-text"> 앱</span>
+      <p class="mini-text">어떤 앱들이 있는지 살펴보세요</p>
+      <a href="download.html" class="download_bt">다운로드 페이지로 가기</a>
+    </div>
+  </div>
+
+  <div class="apps_container">
+
+    <div class="apps_box">
+      <img src="logo/start.png" alt="goUP Start 로고" class="app_list_image">
+      <div>
+        <h3>goUP Start</h3>
+        <p>다른 프로그램들을 모두 한번에 실행하고,<br>컴퓨터가 켜질때 설정한 프로그램들을 한번에 실행할수 있어요</p>
+      </div>
+    </div>
+
+    <div class="apps_box">
+      <img src="logo/clip.png" alt="goUP Clip 로고" class="app_list_image">
+      <div>
+        <h3>goUP Clip</h3>
+        <p>화면에 작은 메모장을 열어서 누구보다 빠르게 메모할수 있어요<br>포스트잇처럼 단기 기억용으로 사용하세요<br><br>* 곧 goUP Brain에 통합될 예정이에요</p>
+      </div>
+    </div>
+
+    <div class="apps_box">
+      <img src="logo/brain.png" alt="goUP Brain 로고" class="app_list_image">
+      <div>
+        <h3>goUP Brain</h3>
+        <p>마크다운 문법을 지원하는 메모 앱이에요<br>장기적으로 기억해야하는 메모들을 한번에 관리하세요</p>
+      </div>
+    </div>
+
+    <div class="apps_box">
+      <img src="logo/none.png" alt="CopyMark 임시 로고" class="app_list_image">
+      <div>
+        <h3>CopyMark</h3>
+        <p>컴퓨터의 성능을 측정하고 공유할수 있어요</p>
+      </div>
+    </div>
+
+    <div class="apps_box">
+      <img src="logo/none.png" alt="TTB OfficeTools 임시 로고" class="app_list_image">
+      <div>
+        <h3>TTB OfficeTools</h3>
+        <p>엑셀을 사용할때 불편한 데이터를 엑셀 형식으로 빠르게 바꿀수 있어요<br><br>* 곧 리뉴얼될 예정이에요</p>
+      </div>
+    </div>
+  </div>
+
+  <!--푸터-->
+  <div id="footerContainer"></div>
+  <script>
+      // XMLHttpRequest를 사용하여 footer.html 파일의 내용을 가져오기
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'footer.html', true);
+      xhr.onreadystatechange = function () {
+          if (xhr.readyState == 4 && xhr.status == 200) {
+              // 가져온 내용을 푸터 컨테이너에 넣기
+              document.getElementById('footerContainer').innerHTML = xhr.responseText;
+          }
+      };
+      xhr.send();
+  </script>
+
+</body>
+</html>

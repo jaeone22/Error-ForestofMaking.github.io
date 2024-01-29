@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>goUP | 모든 앱</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+  <link rel="icon" href="favicon/favicon.ico">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">goUP</a></li>
+        <li><a href="apps.html">모든 앱</a></li>
+        <select_items><li><a href="download.html">다운로드</a></li></select_items>
+        <li><a href="help.html">지원</a></li>
+        <li><a href="goup_id.html">계정</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="title_con">
+    <div class="title_box">
+      <span class="bold-text">감사합니다!</span>
+      <p class="mini-text">마지막으로 파일을 실행시켜 설치해주세요</p>
+      <a href="https://bit.ly/goup-d-install" class="download_bt">다운로드가 시작되지 않았나요? 여기를 클릭하세요</a>
+    </div>
+
+    <meta http-equiv="refresh" content="0;URL='https://bit.ly/goup-d-install'"/>
+  </div>
+
+  <!--푸터-->
+  <div id="footerContainer"></div>
+  <script>
+      // XMLHttpRequest를 사용하여 footer.html 파일의 내용을 가져오기
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'footer.html', true);
+      xhr.onreadystatechange = function () {
+          if (xhr.readyState == 4 && xhr.status == 200) {
+              // 가져온 내용을 푸터 컨테이너에 넣기
+              document.getElementById('footerContainer').innerHTML = xhr.responseText;
+          }
+      };
+      xhr.send();
+  </script>
+
+</body>
+</html>

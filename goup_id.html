@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>goUP | 지원</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+  <link rel="icon" href="favicon/favicon.ico">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">goUP</a></li>
+        <li><a href="apps.html">모든 앱</a></li>
+        <li><a href="download.html">다운로드</a></li>
+        <li><a href="help.html">지원</a></li>
+        <select_items><li><a href="goup_id.html">계정</a></li></select_items>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="title_con">
+    <div class="title_box">
+      <span class="bold-text">goUP ID로</span>
+      <span class="normal-text"> 데이터를 동기화하세요</span>
+      <p class="mini-text">메모를 동기화하고, 모든 컴퓨터에서 같은 매크로를 실행하며, 벤치마크 점수를 공유하세요<br>[ ! ] 아직 웹사이트에서는 goUP ID에 로그인할수 없어요<br>[ ! ] goUP ID는 아직 베타테스트 단계이며, 베타 테스터 권한이 필요해요</p>
+    </div>
+  </div>
+
+  <div class="end_title_con">
+    <div class="end_title_box">
+      <span class="end_bold-text">goUP ID에</span>
+      <span class="end_normal-text"> 로그인하세요</span>
+      <p class="mini-text">로그아웃 상태에요. 로그인해야 계정을 관리할수 있어요<br>[ ! ] 아직 웹사이트에서는 goUP ID에 로그인할수 없어요<br>[ ! ] goUP ID는 아직 베타테스트 단계이며, 베타 테스터 권한이 필요해요</p>
+      <a href="404.html" class="download_bt">goUP ID 로그인</a>
+      <a href="404.html" class="download_bt">goUP ID 만들기</a>
+    </div>
+  </div>
+
+  <div class="info_container">
+
+    <div class="info_box">
+      <h3>많은 기능들이 예정되어있어요</h3>
+      <p>아직 goUP ID는 정식으로 출시되지 않고 아직 베타테스트 단계이지만, 더 많은 기능들이 예정되어있어요<br>베타테스트에 참여하고 싶다면 디스코드 서버에 말해주세요</p>
+      <a href="https://discord.gg/ea29WWjgHV" class="download_bt">Discord 서버 참여</a>
+    </div>
+
+    <div class="info_box">
+      <h3>goUP Start</h3>
+      <p>예정된 기능으로는...<br>1. 설정 동기화<br>2. 프로그램 동기화</p>
+    </div>
+
+    <div class="info_box">
+      <h3>goUP Brain</h3>
+      <p>예정된 기능으로는...<br>1. 기기간 시냅스 동기화<br>2. 시냅스 링크 공유<br>3. 자동 시냅스 백업</p>
+    </div>
+
+  </div>
+
+  <div class="end_title_con">
+    <div class="end_title_box">
+      <span class="end_bold-text">개인정보처리방침</span>
+      <span class="end_normal-text">과 </span>
+      <span class="end_bold-text">이용약관</span>
+      <p class="mini-text">개인정보이용약관과 이용약관을 꼼꼼히 읽고 서비스를 사용해주세요<br>최대한 쉽게 설명했어요<br>[ ! ] 아직 작성되지 않았어요</p>
+      <a href="404.html" class="download_bt">개인정보처리방침</a>
+      <a href="404.html" class="download_bt">이용약관</a>
+    </div>
+  </div>
+
+  <!--푸터-->
+  <div id="footerContainer"></div>
+  <script>
+      // XMLHttpRequest를 사용하여 footer.html 파일의 내용을 가져오기
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'footer.html', true);
+      xhr.onreadystatechange = function () {
+          if (xhr.readyState == 4 && xhr.status == 200) {
+              // 가져온 내용을 푸터 컨테이너에 넣기
+              document.getElementById('footerContainer').innerHTML = xhr.responseText;
+          }
+      };
+      xhr.send();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,248 @@
+  /* 배경 */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ececec;
+    margin: 0;
+  }
+  
+  /* 헤더 */
+  header {
+    background-color: dodgerblue;
+    color: white;
+
+    text-align: center;
+    display: flex;
+    position: fixed; /* 헤더를 고정시킴 */
+    width: 100%;
+    height: 60px;
+    align-items: center; /* 세로 정렬을 가운데로 조정 */
+    justify-content: center; /* 버튼들을 왼쪽으로 정렬 */
+  }
+  
+  /* 로고 */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+
+  /* 텍스트 형식 */
+  .mini-text {
+    font-size: 15pt;
+    font-weight: normal;
+  }
+  .normal-text {
+    font-size: 30pt;
+    font-weight: normal;
+  }
+  .bold-text {
+    font-size: 30pt;
+    font-weight: bold;
+  }
+  .end_normal-text {
+    font-size: 20pt;
+    font-weight: normal;
+  }
+  .end_bold-text {
+    font-size: 20pt;
+    font-weight: bold;
+  }
+
+  /* 타이틀 */
+  .image_title_con {
+    padding: 20px;
+    padding-top: 80px;
+  }
+  .image_title_box {
+    padding: 30px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between; /* 가로 공간을 최대로 사용하여 정렬 */
+    align-items: center; /* 세로 정렬을 가운데로 조정 */
+  }
+  .image_content_wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* 텍스트와 버튼이 남은 공간을 모두 차지하도록 설정 */
+    margin-right: 20px; /* 이미지와 텍스트 사이의 여백 조절 */
+  }
+  .image_text_content {
+    margin-bottom: 10px; /* 텍스트와 버튼 사이의 여백 조절 */
+  }
+  .image_button_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 버튼을 왼쪽으로 정렬 */
+  }
+  .image_download_bt {
+    margin-bottom: 10px; /* 버튼 사이의 여백 조절 */
+  }
+  .image_image_box img {
+    height: 240px; /* 이미지 높이를 240px로 고정 */
+    border-radius: 20px; /* 이미지의 모서리를 둥글게 설정 */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25); /* 그림자 추가 */
+  }  
+  .image_image_box img:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
+  }
+
+  /* 타이틀 */
+  .title_con {
+    padding: 20px;
+    padding-top: 80px;
+  }
+  .title_box {
+    padding: 30px;
+    border-radius: 30px;
+    background-color: #ffffff;
+  }
+
+  /* 타이틀 */
+  .end_title_con {
+    padding: 20px;
+    padding-top: 0px;
+  }
+  .end_title_box {
+    padding: 30px;
+    border-radius: 30px;
+    background-color: #ffffff;
+  }
+  
+  /* 메뉴 바 */
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  nav li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  nav a {
+    display: block;
+    padding: 14px 16px;
+    color: white;
+    font-size: 13pt;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.2s;
+  }
+  nav a:hover {
+    background-color: rgb(0, 128, 255);
+    color: white;
+    font-size: 13pt;
+  }
+  select_items {
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* 푸터 */
+  footer {
+    background-color: #ececec;
+    color: black;
+    text-align: center;
+    padding: 0px;
+    width: 100%;
+    height: 40px;
+    position: relative;
+  }
+
+  /* 다운로드 버튼 */
+  .download_bt {
+    background-color:dodgerblue;
+    border-radius:30px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:18px;
+    padding:16px 76px;
+    text-decoration:none;
+  }
+  .download_bt:hover {
+    background-color:dodgerblue;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+  }
+  
+  /* 설명 레이아웃 */
+  .info_container {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    margin-top: -20px;
+  }
+  .info_box {
+    background-color: #ffffff; /* 화이트 배경색 */
+    border-radius: 30px; /* 20px 모서리 둥글게 */
+    padding: 20px; /* 여백 20px */
+  }
+  @media screen and (max-width: 600px) {
+    .info_container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  @media screen and (min-width: 601px) and (max-width: 1000px) {
+    .info_container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (min-width: 1001px) {
+    .info_container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+/* 앱 레이아웃 */
+.apps_container {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  margin-top: -20px;
+}
+.apps_box {
+  background-color: #ffffff; /* 화이트 배경색 */
+  border-radius: 30px; /* 20px 모서리 둥글게 */
+  padding: 20px; /* 여백 20px */
+  display: grid;
+  grid-template-columns: auto 1fr; /* 이미지와 내용을 한 행에 배치 */
+  gap: 20px; /* 내용과 이미지 사이 간격 */
+  padding-top: 5px; /* 위 여백을 5px로 수정 */
+}
+.apps_box img {
+  height: 100px; /* 이미지 높이를 240px로 고정 */
+  border-radius: 30px; /* 이미지의 모서리를 둥글게 설정 */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25); /* 그림자 추가 */
+  position:relative;
+  top: 15px;
+}
+.apps_box img:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
+}
+@media screen and (max-width: 600px) {
+  .apps_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .apps_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1001px) and (max-width: 1400px) {
+  .apps_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1401px) {
+  .apps_container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

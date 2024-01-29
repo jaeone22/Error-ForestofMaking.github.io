@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>goUP | 지원</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+  <link rel="icon" href="favicon/favicon.ico">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">goUP</a></li>
+        <li><a href="apps.html">모든 앱</a></li>
+        <li><a href="download.html">다운로드</a></li>
+        <select_items><li><a href="help.html">지원</a></li></select_items>
+        <li><a href="goup_id.html">계정</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="title_con">
+    <div class="title_box">
+      <span class="bold-text">도움이</span>
+      <span class="normal-text"> 필요하신가요?</span>
+      <p class="mini-text">자주 물어보는 질문을 보거나 직접 문의할수 있어요</p>
+    </div>
+  </div>
+
+  <div class="end_title_con">
+    <div class="end_title_box">
+      <span class="end_bold-text">Discord 서버에서</span>
+      <span class="end_normal-text"> 직접 도움을 받을수 있어요</span>
+      <p class="mini-text">그리고 업데이트 알림까지 받을수 있어요</p>
+      <a href="https://discord.gg/ea29WWjgHV" class="download_bt">Discord 서버 참여</a>
+    </div>
+  </div>
+
+  <div class="info_container">
+
+    <div class="info_box">
+      <h3>어떤 기기에서 사용할수 있나요?</h3>
+      <p>현재 Windows 10 이상에서만 사용이 가능해요<br>macOS와 Linux 지원은 계획중이에요</p>
+    </div>
+
+    <div class="info_box">
+      <h3>Google Play에 있는 goUP 앱은 정식 앱인가요?</h3>
+      <p>Google Play에 있는 goUP 앱들은 구버전 앱들이에요<br>Android와 iOS용 goUP 앱은 아직 정식으로 지원되지 않아요</p>
+    </div>
+
+    <div class="info_box">
+      <h3>설치중 문제가 발생해요</h3>
+      <p>설치하려면 최소 50mbps의 속도가 필요해요<br>인터넷이 연결되어있는데도 설치중 문제가 발생한다면 특수한 경우일수 있으니 Discord 서버로 문의해주세요</p>
+    </div>
+
+  </div>
+
+  <!--푸터-->
+  <div id="footerContainer"></div>
+  <script>
+      // XMLHttpRequest를 사용하여 footer.html 파일의 내용을 가져오기
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'footer.html', true);
+      xhr.onreadystatechange = function () {
+          if (xhr.readyState == 4 && xhr.status == 200) {
+              // 가져온 내용을 푸터 컨테이너에 넣기
+              document.getElementById('footerContainer').innerHTML = xhr.responseText;
+          }
+      };
+      xhr.send();
+  </script>
+
+</body>
+</html>

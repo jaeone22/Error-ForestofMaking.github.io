@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>goUP | Error</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+  <link rel="icon" href="favicon/favicon.ico">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">goUP</a></li>
+        <li><a href="apps.html">모든 앱</a></li>
+        <li><a href="download.html">다운로드</a></li>
+        <li><a href="help.html">지원</a></li>
+        <li><a href="goup_id.html">계정</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="title_con">
+    <div class="title_box">
+      <span class="bold-text">404</span>
+      <span class="normal-text"> 오류가 발생했어요</span>
+      <p class="mini-text">접속한 페이지가 존재하지 않아요</p>
+      <a href="help.html" class="download_bt">도움이 필요하신가요?</a>
+    </div>
+  </div>
+
+  <!--푸터-->
+  <div id="footerContainer"></div>
+  <script>
+      // XMLHttpRequest를 사용하여 footer.html 파일의 내용을 가져오기
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'footer.html', true);
+      xhr.onreadystatechange = function () {
+          if (xhr.readyState == 4 && xhr.status == 200) {
+              // 가져온 내용을 푸터 컨테이너에 넣기
+              document.getElementById('footerContainer').innerHTML = xhr.responseText;
+          }
+      };
+      xhr.send();
+  </script>
+
+</body>
+</html>

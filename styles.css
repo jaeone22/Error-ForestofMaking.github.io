@@ -87,6 +87,20 @@
   .image_image_box img:hover {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
   }
+  /* 화면 가로가 작을 때 세로 정렬 적용 */
+  @media screen and (max-width: 850px) {
+  .image_title_box {
+    flex-direction: column;
+    align-items: left;
+  }
+  .image_button_content {
+    align-items: left;
+  }
+  .image_image_box {
+    display: none; /* 화면 너비가 768px 이하일 때 이미지 숨기기 */
+  }
+}
+
 
   /* 타이틀 */
   .title_con {
@@ -165,6 +179,7 @@
     font-family:Arial;
     font-size:18px;
     padding:16px 76px;
+    margin: 5px;
     text-decoration:none;
   }
   .download_bt:hover {

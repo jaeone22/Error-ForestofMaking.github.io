@@ -28,6 +28,10 @@
   }
 
   /* 텍스트 형식 */
+  .smini-text {
+    font-size: 10pt;
+    font-weight: normal;
+  }
   .mini-text {
     font-size: 15pt;
     font-weight: normal;
@@ -150,12 +154,10 @@
   }
   nav a:hover {
     background-color: rgb(0, 128, 255);
-    color: white;
     font-size: 13pt;
   }
   select_items {
     font-weight: bold;
-    color: white;
   }
   
   /* 푸터 */
@@ -178,8 +180,8 @@
     color:#ffffff;
     font-family:Arial;
     font-size:18px;
-    padding:16px 76px;
-    margin: 5px;
+    padding:15px 70px;
+    margin-top: 10px;
     text-decoration:none;
   }
   .download_bt:hover {

@@ -55,8 +55,9 @@
 
   /* 타이틀 */
   .image_title_con {
-    padding: 20px;
-    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
   }
   .image_title_box {
     padding: 30px;
@@ -105,25 +106,19 @@
   }
 }
 
+  /* 타이틀 */
+  .top_title_con {
+    padding-top: 80px;
+  }
 
   /* 타이틀 */
   .title_con {
     padding: 20px;
-    padding-top: 80px;
+    padding-top: 0px;
   }
   .title_box {
     padding: 30px;
-    border-radius: 30px;
-    background-color: #ffffff;
-  }
-
-  /* 타이틀 */
-  .end_title_con {
-    padding: 20px;
-    padding-top: 0px;
-  }
-  .end_title_box {
-    padding: 30px;
+    padding-top: 40px;
     border-radius: 30px;
     background-color: #ffffff;
   }
@@ -262,4 +257,12 @@
   .apps_container {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+superinfo_red {
+  background-color: red;
+}
+
+superinfo_blue {
+  background-color: dodgerblue;
 }

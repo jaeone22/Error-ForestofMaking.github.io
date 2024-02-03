@@ -7,6 +7,9 @@
   <title>goUP | 지원</title>
   <link rel="stylesheet" href="styles.css">
 
+  <link rel="stylesheet" href="infobox.css">
+  <script src="infobox.js"></script>
+
   <link rel="shortcut icon" href="favicon/favicon.ico">
   <link rel="icon" href="favicon/favicon.ico">
 </head>
@@ -25,21 +28,24 @@
     </nav>
   </header>
 
+  <div class="top_title_con">
+    <div class="title_con">
+      <div class="title_box">
+        <span class="normal-text">goUP</span>
+        &nbsp;
+        <span class="bold-text">ID</span>
+        <p class="mini-text">메모를 동기화하고, 모든 컴퓨터에서 같은 매크로를 실행하며, 벤치마크 점수를 공유하세요<br>[ ! ] 아직 웹사이트에서는 goUP ID에 로그인할수 없어요<br>[ ! ] goUP ID는 아직 베타테스트 단계이며, 베타 테스터 권한이 필요해요</p>
+      </div>
+    </div>
+  </div class="top_title_con">
+
   <div class="title_con">
     <div class="title_box">
-      <span class="bold-text">goUP ID로</span>
-      <span class="normal-text"> 데이터를 동기화하세요</span>
-      <p class="mini-text">메모를 동기화하고, 모든 컴퓨터에서 같은 매크로를 실행하며, 벤치마크 점수를 공유하세요<br>[ ! ] 아직 웹사이트에서는 goUP ID에 로그인할수 없어요<br>[ ! ] goUP ID는 아직 베타테스트 단계이며, 베타 테스터 권한이 필요해요</p>
-    </div>
-  </div>
-
-  <div class="end_title_con">
-    <div class="end_title_box">
       <span class="end_bold-text">goUP ID에</span>
-      <span class="end_normal-text"> 로그인하세요</span>
+      &nbsp;
+      <span class="end_normal-text">로그인하세요</span>
       <p class="mini-text">로그아웃 상태에요. 로그인해야 계정을 관리할수 있어요<br>[ ! ] 아직 웹사이트에서는 goUP ID에 로그인할수 없어요<br>[ ! ] goUP ID는 아직 베타테스트 단계이며, 베타 테스터 권한이 필요해요</p>
-      <a href="404.html" class="download_bt">goUP ID 로그인</a>
-      <a href="404.html" class="download_bt">goUP ID 만들기</a>
+      <a id="openModalBtn" class="download_bt">로그인</a>
     </div>
   </div>
 
@@ -63,14 +69,24 @@
 
   </div>
 
-  <div class="end_title_con">
-    <div class="end_title_box">
+  <div class="title_con">
+    <div class="title_box">
       <span class="end_bold-text">개인정보처리방침</span>
-      <span class="end_normal-text">과 </span>
+      <span class="end_normal-text">과</span>
+      &nbsp;
       <span class="end_bold-text">이용약관</span>
-      <p class="mini-text">개인정보이용약관과 이용약관을 꼼꼼히 읽고 서비스를 사용해주세요<br>최대한 쉽게 설명했어요<br>[ ! ] 아직 작성되지 않았어요</p>
-      <a href="404.html" class="download_bt">개인정보처리방침</a>
-      <a href="404.html" class="download_bt">이용약관</a>
+      <p class="mini-text">개인정보이용약관과 이용약관을 꼼꼼히 읽고 서비스를 사용해주세요<br>[ ! ] 아직 작성되지 않았어요</p>
+      <a href="privacy-policy.html" class="download_bt">개인정보처리방침</a>
+      <a href="tos.html" class="download_bt">개인정보처리방침</a>
+    </div>
+  </div>
+
+  <div id="customModal" class="modal">
+    <div class="modal-content">
+      <span id="close_bt" class="close">&times;</span>
+          <h3>goUP ID</h3>
+          <p>아직 goUP ID는 베타테스터만 사용할수 있어요<br>또한 사이트에서 로그인하는 기능은 아직 구현되지 않았어요<br>개인정보처리방침과 이용약관은 아직 작성되지 않았어요<br>베타테스트에 참여하고 싶다면 디스코드 서버에 말해주세요</p>
+      <a href="https://discord.gg/ea29WWjgHV" class="close_bt">Discord 서버 참여</a>
     </div>
   </div>
 

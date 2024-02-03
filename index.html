@@ -9,6 +9,9 @@
 
   <link rel="stylesheet" href="styles.css">
 
+  <link rel="stylesheet" href="infobox.css">
+  <script src="infobox.js"></script>
+
   <link rel="shortcut icon" href="favicon/favicon.ico">
   <link rel="icon" href="favicon/favicon.ico">
 </head>
@@ -27,34 +30,45 @@
     </nav>
   </header>
 
-  <div class="image_title_con">
-    <div class="image_title_box">
-      <div class="image_content_wrapper">
-        <div class="image_text_content">
-          <span class="normal-text">세상 간편한 </span>
-          <span class="bold-text"> 유틸리티.</span>
-          <p class="mini-text">goUP AppStore를 설치하고 모든 goUP 앱을 사용해보세요</p>
-          <p class="mini-text">2021년 6월 12일부터 많은 유틸리티를 무료로 제공하고있어요</p>
+  <div class="top_title_con">
+    <div class="image_title_con">
+      <div class="image_title_box">
+        <div class="image_content_wrapper">
+          <div class="image_text_content">
+            <span class="normal-text">세상 간편한</span>
+            &nbsp;
+            <span class="bold-text">유틸리티.</span>
+            <p class="mini-text">goUP AppStore를 설치하고 모든 goUP 앱을 사용해보세요</p>
+            <p class="mini-text">2021년 6월 12일부터 많은 유틸리티를 무료로 제공하고있어요</p>
+          </div>
+          <div class="image_button_content">
+            <a href="download.html" class="download_bt">다운로드 페이지로 가기</a>
+          </div>
         </div>
-        <div class="image_button_content">
-          <a href="download.html" class="download_bt">다운로드 페이지로 가기</a>
+        <div class="image_image_box">
+          <img src="image/appstore.png" alt="goUP AppStore 메인 화면">
         </div>
-      </div>
-      <div class="image_image_box">
-        <img src="image/appstore.png" alt="goUP AppStore 메인 화면">
       </div>
     </div>
   </div>
 
-  <div class="end_title_con">
-    <div class="end_title_box">
-      <span class="end_normal-text">goUP 개발에</span>
-      <span class="end_bold-text"> 도움을 주세요</span>
+  <div class="title_con">
+    <div class="title_box">
+      <span class="end_normal-text">개발에 도움을 주세요</span>
       <p class="mini-text">어떤 방법이든 상관 없어요</p>
       <a href="https://discord.gg/ea29WWjgHV" class="download_bt">Discord 서버 참여</a>
       <a href="https://github.com/Error-ForestofMaking" class="download_bt">Github 프로필 보기</a>
       <a href="https://www.youtube.com/@fom_" class="download_bt">YouTube 채널 구독</a>
-      <a href="404.html" class="download_bt">후원</a>
+      <a id="openModalBtn" class="download_bt">후원</a>
+    </div>
+  </div>
+
+  <div id="customModal" class="modal">
+    <div class="modal-content">
+      <span id="close_bt" class="close">&times;</span>
+          <h3>감사합니다!</h3>
+          <p>아직 이 사이트는 베타 버전이에요<br>그래서 후원 기능과 goUP ID 관련 기능들은 아직 작동하지 않아요<br>후원 기능은 기존 사이트에서 사용할수 있어요</p>
+      <a href="https://sites.google.com/view/errorwebsites/후원" class="close_bt">기존 사이트 열기</a>
     </div>
   </div>
 

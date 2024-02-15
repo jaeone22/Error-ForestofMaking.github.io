@@ -16,11 +16,11 @@
   <header>
     <nav>
       <ul>
-        <li><a href="index.html">goUP</a></li>
-        <li><a href="apps.html">모든 앱</a></li>
-        <select_items><li><a href="download.html">다운로드</a></li></select_items>
-        <li><a href="help.html">지원</a></li>
-        <li><a href="goup_id.html">계정</a></li>
+        <li><a href="index">goUP</a></li>
+        <li><a href="apps">모든 앱</a></li>
+        <select_items><li><a href="download">다운로드</a></li></select_items>
+        <li><a href="help">지원</a></li>
+        <li><a href="goup_id">계정</a></li>
       </ul>
     </nav>
   </header>
@@ -37,7 +37,7 @@
             <p class="mini-text">goUP AppStore에서 모든 goUP 앱을 설치할수 있어요</p>
           </div>
           <div class="image_button_content">
-            <a href="get.html" class="download_bt">다운로드</a>
+            <a href="get" class="download_bt">다운로드</a>
           </div>
         </div>
         <div class="image_image_box">
@@ -69,16 +69,16 @@
       <p class="smini-text">SSD: 여유공간 8GB 이상</p>
       <p class="smini-text">NET: 평균속도 50mbps 이상</p>
       
-      <a href="get.html" class="download_bt">Windows용 다운로드</a>
+      <a href="get" class="download_bt">Windows용 다운로드</a>
     </div>
   </div>
 
   <!--푸터-->
   <div id="footerContainer"></div>
   <script>
-      // XMLHttpRequest를 사용하여 footer.html 파일의 내용을 가져오기
+      // XMLHttpRequest를 사용하여 footer 파일의 내용을 가져오기
       var xhr = new XMLHttpRequest();
-      xhr.open('GET', 'footer.html', true);
+      xhr.open('GET', 'footer', true);
       xhr.onreadystatechange = function () {
           if (xhr.readyState == 4 && xhr.status == 200) {
               // 가져온 내용을 푸터 컨테이너에 넣기

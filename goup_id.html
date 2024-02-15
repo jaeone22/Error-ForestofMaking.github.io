@@ -19,11 +19,11 @@
   <header>
     <nav>
       <ul>
-        <li><a href="index.html">goUP</a></li>
-        <li><a href="apps.html">모든 앱</a></li>
-        <li><a href="download.html">다운로드</a></li>
-        <li><a href="help.html">지원</a></li>
-        <select_items><li><a href="goup_id.html">계정</a></li></select_items>
+        <li><a href="index">goUP</a></li>
+        <li><a href="apps">모든 앱</a></li>
+        <li><a href="download">다운로드</a></li>
+        <li><a href="help">지원</a></li>
+        <select_items><li><a href="goup_id">계정</a></li></select_items>
       </ul>
     </nav>
   </header>
@@ -76,17 +76,17 @@
       &nbsp;
       <span class="end_bold-text">이용약관</span>
       <p class="mini-text">개인정보이용약관과 이용약관을 꼼꼼히 읽고 서비스를 사용해주세요<br>[ ! ] 아직 작성되지 않았어요</p>
-      <a href="privacy.html" class="download_bt">개인정보처리방침</a>
-      <a href="tos.html" class="download_bt">이용약관</a>
+      <a href="privacy" class="download_bt">개인정보처리방침</a>
+      <a href="tos" class="download_bt">이용약관</a>
     </div>
   </div>
 
   <!--푸터-->
   <div id="footerContainer"></div>
   <script>
-      // XMLHttpRequest를 사용하여 footer.html 파일의 내용을 가져오기
+      // XMLHttpRequest를 사용하여 footer 파일의 내용을 가져오기
       var xhr = new XMLHttpRequest();
-      xhr.open('GET', 'footer.html', true);
+      xhr.open('GET', 'footer', true);
       xhr.onreadystatechange = function () {
           if (xhr.readyState == 4 && xhr.status == 200) {
               // 가져온 내용을 푸터 컨테이너에 넣기

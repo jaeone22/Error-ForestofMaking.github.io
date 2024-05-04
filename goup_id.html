@@ -17,7 +17,12 @@
 
   <header>
     <nav>
-      <ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul id="menu">
         <li><a href="index">goUP</a></li>
         <li><a href="apps">모든 앱</a></li>
         <li><a href="download">다운로드</a></li>
@@ -26,6 +31,8 @@
       </ul>
     </nav>
   </header>
+  
+  <script src="menubar.js"></script>
 
   <div class="top_title_con">
     <div class="title_con">
@@ -33,12 +40,13 @@
         <span class="normal-text">goUP</span>
         &nbsp;
         <span class="bold-text">ID</span>
-        <p class="mini-text">메모를 동기화하고, 모든 컴퓨터에서 같은 매크로를 실행하며, 벤치마크 점수를 공유하세요<br>[ ! ] 아직 웹사이트에서는 goUP ID에 로그인할수 없어요</p>
+        <!--<p class="mini-text">메모를 동기화하고, 모든 컴퓨터에서 같은 매크로를 실행하며, 벤치마크 점수를 공유하세요</p>-->
+        <p class="mini-text">⚠️ 아직 웹사이트에서는 goUP ID를 사용할수 없어요</p>
       </div>
     </div>
   </div class="top_title_con">
 
-  <div class="title_con">
+  <!--<div class="title_con">
     <div class="title_box">
       <span class="end_bold-text">goUP ID에</span>
       &nbsp;
@@ -46,14 +54,11 @@
       <p class="mini-text">로그아웃 상태에요. 로그인해야 계정을 관리할수 있어요<br>[ ! ] 아직 웹사이트에서는 goUP ID에 로그인할수 없어요<br>[ ! ] goUP Brain을 설치해 사용할수 있어요</p>
       <a href="404" class="download_bt">로그인</a>
     </div>
-  </div>
+  </div>-->
 
   <div class="title_con">
     <div class="title_box">
-      <span class="end_bold-text">개인정보처리방침</span>
-      <span class="end_normal-text">과</span>
-      &nbsp;
-      <span class="end_bold-text">이용약관</span>
+      <span class="end_bold-text">법적 문서</span>
       <p class="mini-text">개인정보이용약관과 이용약관을 꼼꼼히 읽고 서비스를 사용해주세요</p>
       <a href="https://privacy-goup.lrl.kr" class="download_bt">개인정보처리방침</a>
       <a href="https://tos-goup.lrl.kr" class="download_bt">이용약관</a>

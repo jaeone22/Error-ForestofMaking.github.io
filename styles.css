@@ -123,37 +123,80 @@
     background-color: #ffffff;
   }
   
-  /* 메뉴 바 */
-  nav {
-    display: flex;
-    justify-content: center;
-  }
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  nav li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  nav a {
+  
+/* 메뉴 바 */
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+nav a {
+  display: block;
+  padding: 14px 16px;
+  color: white;
+  font-size: 13pt;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.2s;
+}
+nav a:hover {
+  background-color: rgb(0, 128, 255);
+  font-size: 13pt;
+}
+select_items {
+  font-weight: bold;
+}
+/* Hamburger Icon Styles */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  float: right;
+  padding: 15px 15px;
+}
+.hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px auto;
+}
+select_items {
+  font-weight: bold;
+}
+/* Media Query for Responsive Design */
+@media screen and (max-width: 600px) {
+  .hamburger {
     display: block;
-    padding: 14px 16px;
-    color: white;
-    font-size: 13pt;
-    text-decoration: none;
-    border-radius: 25px;
-    transition: background-color 0.2s;
   }
-  nav a:hover {
-    background-color: rgb(0, 128, 255);
-    font-size: 13pt;
+  ul {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: rgba(30, 143, 255, 0.95);
   }
-  select_items {
-    font-weight: bold;
+  ul.active {
+    display: block;
   }
+  ul li {
+    float: none;
+    width: 90%;
+    text-align: center;
+  }
+  ul li a {
+    padding: 10px 0;
+  }
+}
   
   /* 푸터 */
   footer {

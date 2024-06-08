@@ -226,6 +226,24 @@ select_items {
     background-color:dodgerblue;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
   }
+
+    /* 다운로드 버튼 */
+    .download_bt_mini {
+      background-color:dodgerblue;
+      border-radius:30px;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:Arial;
+      font-size:18px;
+      padding:10px 30px;
+      margin-top: 10px;
+      text-decoration:none;
+    }
+    .download_bt_mini:hover {
+      background-color:dodgerblue;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+    }
   
   /* 설명 레이아웃 */
   .info_container {

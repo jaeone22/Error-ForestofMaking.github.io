@@ -1,14 +1,15 @@
   /* 배경 */
   body {
     font-family: Arial, sans-serif;
-    background-color: #ececec;
+    background-color: #272727;
+    color: white;
     margin: 0;
   }
   
   /* 헤더 */
   header {
     background-color: dodgerblue;
-    color: white;
+    color: #272727;
 
     text-align: center;
     display: flex;
@@ -63,7 +64,7 @@
   .image_title_box {
     padding: 30px;
     border-radius: 30px;
-    background-color: #ffffff;
+    background-color: #323232;
     display: flex;
     justify-content: space-between; /* 가로 공간을 최대로 사용하여 정렬 */
     align-items: center; /* 세로 정렬을 가운데로 조정 */
@@ -121,7 +122,7 @@
     padding: 30px;
     padding-top: 40px;
     border-radius: 30px;
-    background-color: #ffffff;
+    background-color: #323232;
   }
   
   
@@ -201,7 +202,7 @@ select_items {
   
   /* 푸터 */
   footer {
-    background-color: #ececec;
+    background-color: #323232;
     color: black;
     text-align: center;
     padding: 0px;
@@ -254,7 +255,7 @@ select_items {
     margin-top: -20px;
   }
   .info_box {
-    background-color: #ffffff; /* 화이트 배경색 */
+    background-color: #323232; /* 화이트 배경색 */
     border-radius: 30px; /* 20px 모서리 둥글게 */
     padding: 20px; /* 여백 20px */
   }
@@ -282,7 +283,7 @@ select_items {
   margin-top: -20px;
 }
 .apps_box {
-  background-color: #ffffff; /* 화이트 배경색 */
+  background-color: #323232; /* 화이트 배경색 */
   border-radius: 30px; /* 20px 모서리 둥글게 */
   padding: 20px; /* 여백 20px */
   display: grid;

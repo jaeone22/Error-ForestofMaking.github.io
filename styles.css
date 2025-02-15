@@ -268,43 +268,19 @@
   .apps_container {
     display: grid;
     gap: 20px;
-    padding: 20px;
-    margin-top: -20px;
+    grid-template-columns: repeat(1, 1fr);
   }
   .apps_box {
-    background-color: #323232;
-    border-radius: 30px; 
-    padding: 20px;
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 20px;
     padding-top: 5px;
   }
   .apps_box img {
-    height: 100px;
-    border-radius: 30px;
+    height: 80px;
+    border-radius: 20px;
     position:relative;
     top: 15px;
-  }
-  @media screen and (max-width: 600px) {
-    .apps_container {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  }
-  @media screen and (min-width: 601px) and (max-width: 1000px) {
-    .apps_container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  @media screen and (min-width: 1001px) and (max-width: 1400px) {
-    .apps_container {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  @media screen and (min-width: 1401px) {
-    .apps_container {
-      grid-template-columns: repeat(4, 1fr);
-    }
   }
 
   /* 언어 선택기 스타일 */

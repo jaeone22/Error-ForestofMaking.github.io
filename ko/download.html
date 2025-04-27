@@ -47,7 +47,7 @@
             <p class="mini-n-text">goUP Store에서 모든 goUP 앱을 설치할수 있어요</p>
           </div>
           <div class="image_button_content">
-            <a href="get.html" class="download_bt">Windows용 다운로드</a>
+            <a href="#" class="download_bt" onclick="downloadApp()">Windows용 다운로드</a>
           </div>
         </div>
         <div class="image_image_box">
@@ -56,6 +56,21 @@
       </div>
     </div>
   </div>
+
+  <script>
+    function downloadApp() {
+        fetch('https://id.goup.im/api/status/goup-store-download', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({})
+        })
+        .then(response => {
+          window.location.href = 'get.html';
+        })
+    }
+  </script>
 
   <!--푸터-->
   <div id="footerContainer"></div>

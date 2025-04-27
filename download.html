@@ -43,11 +43,10 @@
             <span class="big-n-text">Download</span>
             &nbsp;
             <span class="big-b-text">goUP Store</span>
-            <span class="big-n-text">now</span>
             <p class="mini-n-text">You can install all goUP apps from goUP Store</p>
           </div>
           <div class="image_button_content">
-            <a href="get.html" class="download_bt">Download for Windows</a>
+            <a href="#" class="download_bt" onclick="downloadApp()">Download for Windows</a>
           </div>
         </div>
         <div class="image_image_box">
@@ -56,6 +55,21 @@
       </div>
     </div>
   </div>
+
+  <script>
+    function downloadApp() {
+        fetch('https://id.goup.im/api/status/goup-store-download', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({})
+        })
+        .then(response => {
+          window.location.href = 'get.html';
+        })
+    }
+  </script>
 
   <!--푸터-->
   <div id="footerContainer"></div>

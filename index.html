@@ -9,14 +9,17 @@
 
   <link rel="stylesheet" href="/styles.css">
 
-  <link rel="shortcut icon" href="/favicon/favicon.ico">
-  <link rel="icon" href="/favicon/favicon.ico">
+  <link rel="shortcut icon" href="/other/favicon/favicon.ico">
+  <link rel="icon" href="/other/favicon/favicon.ico">
 
-  <meta name='description' content='goUP develops free apps and programs without ads'>
+  <meta name='description' content='goUP develops free apps and programs without ads. goUP is not a company, it is a personal project'>
+
+  <link rel="alternate" href="/index" hreflang="en"/>
+  <link rel="alternate" href="/ko/index" hreflang="ko"/>
 </head>
 
 <body>
-  <iframe src="/lang.html" style="border: none; width: 100%; height: 20px;"></iframe>
+  <iframe src="/lang" style="border: none; width: 100%; height: 20px;"></iframe>
 
   <header>
     <nav>
@@ -26,11 +29,11 @@
         <div class="bar"></div>
       </div>
       <ul id="menu">
-        <select_items><li><a href="index.html">goUP</a></li></select_items>
-        <li><a href="apps.html">All Apps</a></li>
-        <li><a href="download.html">Download</a></li>
-        <li><a href="help.html">Support</a></li>
-        <li><a href="goup_id.html">ID</a></li>
+        <select_items><li><a href="/">goUP</a></li></select_items>
+        <li><a href="/apps">All Apps</a></li>
+        <li><a href="/download">Download</a></li>
+        <li><a href="/help">Support</a></li>
+        <li><a href="/goup_id">ID</a></li>
       </ul>
     </nav>
   </header>
@@ -48,11 +51,11 @@
             <p class="mini-n-text">Since June 12, 2021, I have been providing many utilities for free</p>
           </div>
           <div class="image_button_content">
-            <a href="download.html" class="download_bt">Go to Download Page</a>
+            <a href="download" class="download_bt">Go to Download Page</a>
           </div>
         </div>
         <div class="image_image_box">
-          <img src="/image/appstore_en.png" alt="goUP Store main screen">
+          <img src="/other/image/appstore_en.png" alt="goUP Store main screen">
         </div>
       </div>
     </div>
@@ -100,21 +103,6 @@
       <p>You are not forced to install or use other apps or programs<br>You are not forced to create a goUP ID account<br>You can just use it as much as you want, however you want</p>
     </div>
   </div>
-
-  <!--푸터-->
-  <div id="footerContainer"></div>
-  <script>
-      // XMLHttpRequest를 사용하여 footer 파일의 내용을 가져오기
-      var xhr = new XMLHttpRequest();
-      xhr.open('GET', 'footer', true);
-      xhr.onreadystatechange = function () {
-          if (xhr.readyState == 4 && xhr.status == 200) {
-              // 가져온 내용을 터 컨테이너에 넣기
-              document.getElementById('footerContainer').innerHTML = xhr.responseText;
-          }
-      };
-      xhr.send();
-  </script>
 
 </body>
 </html>

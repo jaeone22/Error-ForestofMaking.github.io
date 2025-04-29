@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>goUP | 다운로드</title>
+  <link rel="stylesheet" href="/styles.css">
+
+  <link rel="shortcut icon" href="/other/favicon/favicon.ico">
+  <link rel="icon" href="/other/favicon/favicon.ico">
+
+  <meta name='description' content='지금 Windows용 goUP Store를 다운로드하세요. goUP Store로 모든 goUP 앱을 설치하고 관리할수 있어요'>
+
+  <link rel="alternate" href="/download" hreflang="en"/>
+  <link rel="alternate" href="/ko/download" hreflang="ko"/>
+</head>
+
+<body>
+  <iframe src="/lang" style="border: none; width: 100%; height: 20px;"></iframe>
+
+  <header>
+    <nav>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul id="menu">
+        <li><a href="/ko/">goUP</a></li>
+        <li><a href="/ko/apps">모든 앱</a></li>
+        <select_items><li><a href="/ko/download">다운로드</a></li></select_items>
+        <li><a href="/ko/help">지원</a></li>
+        <li><a href="/ko/goup_id">계정</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <script src="/menubar.js"></script>
+
+  <div class="top_title_con">
+    <div class="image_title_con">
+      <div class="image_title_box">
+        <div class="image_content_wrapper">
+          <div class="image_text_content">
+            <span class="big-n-text">지금 바로</span>
+            &nbsp;
+            <span class="big-b-text">goUP Store</span>
+            <span class="big-n-text">를 다운로드하세요</span>
+            <p class="mini-n-text">goUP Store에서 모든 goUP 앱을 설치할수 있어요</p>
+          </div>
+          <div class="image_button_content">
+            <a href="#" class="download_bt" onclick="downloadApp()">Windows용 다운로드</a>
+          </div>
+        </div>
+        <div class="image_image_box">
+          <img src="/other/image/appstore_ko.png" alt="goUP Store 메인 화면">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function downloadApp() {
+        fetch('https://id.goup.im/api/status/goup-store-download', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({})
+        })
+        .then(response => {
+          window.location.href = 'get';
+        })
+    }
+  </script>
+
+</body>
+</html>

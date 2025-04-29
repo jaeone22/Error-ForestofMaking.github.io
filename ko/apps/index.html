@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko-kr">
 
 <head>
   <meta charset="UTF-8">
@@ -7,14 +7,17 @@
   <title>goUP | 모든 앱</title>
   <link rel="stylesheet" href="/styles.css">
 
-  <link rel="shortcut icon" href="/favicon/favicon.ico">
-  <link rel="icon" href="/favicon/favicon.ico">
+  <link rel="shortcut icon" href="/other/favicon/favicon.ico">
+  <link rel="icon" href="/other/favicon/favicon.ico">
 
-  <meta name='description' content='You can check out all the convenient goUP apps here'>
+  <meta name='description' content='모든 goUP 앱들을 확인하세요. 웹 앱과 Windows용 앱이 준비되어있어요'>
+
+  <link rel="alternate" href="/apps" hreflang="en"/>
+  <link rel="alternate" href="/ko/apps" hreflang="ko"/>
 </head>
 
 <body>
-  <iframe src="/lang.html" style="border: none; width: 100%; height: 20px;"></iframe>
+  <iframe src="/lang" style="border: none; width: 100%; height: 20px;"></iframe>
 
   <header>
     <nav>
@@ -24,11 +27,11 @@
         <div class="bar"></div>
       </div>
       <ul id="menu">
-        <li><a href="index.html">goUP</a></li>
-        <select_items><li><a href="apps.html">모든 앱</a></li></select_items>
-        <li><a href="download.html">다운로드</a></li>
-        <li><a href="help.html">지원</a></li>
-        <li><a href="goup_id.html">계정</a></li>
+        <li><a href="/ko/">goUP</a></li>
+        <select_items><li><a href="/ko/apps">모든 앱</a></li></select_items>
+        <li><a href="/ko/download">다운로드</a></li>
+        <li><a href="/ko/help">지원</a></li>
+        <li><a href="/ko/goup_id">계정</a></li>
       </ul>
     </nav>
   </header>
@@ -48,13 +51,13 @@
 
   <div class="title_con">
     <div class="title_box">
-      <span class="mid-b-text">Web Apps </span>
-      <span class="mid-n-text">- Used in browser</span>
+      <span class="mid-b-text">웹 앱 </span>
+      <span class="mid-n-text">- 브라우저에서 사용하세요</span>
 
       <div class="apps_container">
 
         <div class="apps_box">
-          <img src="/logo/none.png" alt="goUP Tab logo" class="app_list_image">
+          <img src="/other/logo/none.png" alt="goUP Tab logo" class="app_list_image">
           <div>
             <h3>goUP URL</h3>
             <p>로그인이 필요 없는 무료 URL 단축기, 긴 URL 주소를 짧게 만드세요</p>
@@ -63,7 +66,7 @@
         </div>
 
         <div class="apps_box">
-          <img src="/logo/none.png" alt="goUP Tab logo" class="app_list_image">
+          <img src="/other/logo/none.png" alt="goUP Tab logo" class="app_list_image">
           <div>
             <h3>goUP AI</h3>
             <p>로그인 없이 goUP AI와 Spynos 맞춤법 검사기를 무료로 사용하세요</p>
@@ -72,7 +75,7 @@
         </div>
 
         <div class="apps_box">
-          <img src="/logo/tab.png" alt="goUP Tab logo" class="app_list_image">
+          <img src="/other/logo/tab.png" alt="goUP Tab logo" class="app_list_image">
           <div>
             <h3>goUP Tab</h3>
             <p>브라우저 새 탭 페이지를 간단하고 편리한 goUP 탭으로 변경하세요</p>
@@ -87,46 +90,30 @@
   <div class="title_con">
     <div class="title_box">
       <span class="mid-b-text">Windows 앱 </span>
-      <span class="mid-n-text">- goUP Store에서 설치</span>
+      <span class="mid-n-text">- goUP Store에서 설치하세요</span>
 
       <div class="apps_container">
 
         <div class="apps_box">
-          <img src="/logo/start.png" alt="goUP Start logo" class="app_list_image">
+          <img src="/other/logo/start.png" alt="goUP Start logo" class="app_list_image">
           <div>
             <h3>goUP Start</h3>
             <p>다른 프로그램들을 모두 한번에 실행하고,<br>컴퓨터가 켜질때 설정한 프로그램들을 한번에 실행할수 있어요<br>상단의 goUP AI 및 Spynos 맞춤법 검사기를 가입없이 무료로 사용할수 있어요</p>
-            <a href="download.html" class="download_bt_mini">goUP Store 다운로드</a>
+            <a href="download" class="download_bt_mini">goUP Store 다운로드</a>
           </div>
         </div>
 
         <div class="apps_box">
-          <img src="/logo/clip.png" alt="goUP Clip logo" class="app_list_image">
+          <img src="/other/logo/clip.png" alt="goUP Clip logo" class="app_list_image">
           <div>
             <h3>goUP Clip</h3>
             <p>화면에 작은 메모장을 열어서 누구보다 빠르게 메모할수 있어요<br>포스트잇처럼 단기 기억용으로 사용하세요</p>
-            <a href="download.html" class="download_bt_mini">goUP Store 다운로드</a>
+            <a href="download" class="download_bt_mini">goUP Store 다운로드</a>
           </div>
         </div>
 
       </div>
     </div>
   </div>
-
-  <!--푸터-->
-  <div id="footerContainer"></div>
-  <script>
-      // XMLHttpRequest를 사용하여 footer 파일의 내용을 가져오기
-      var xhr = new XMLHttpRequest();
-      xhr.open('GET', 'footer', true);
-      xhr.onreadystatechange = function () {
-          if (xhr.readyState == 4 && xhr.status == 200) {
-              // 가져온 내용을 푸터 컨테이너에 넣기
-              document.getElementById('footerContainer').innerHTML = xhr.responseText;
-          }
-      };
-      xhr.send();
-  </script>
-
 </body>
 </html>
